@@ -1,0 +1,18 @@
+[{
+  "name": "Pfizer",
+  "address": "Rua da Liberdade, 25",
+  "status": ["ativo"],
+  "id": "840b35e2-d8b6-4fca-9bd4-b8e6c34b13b9"
+},
+{
+  "name": "Moderna",
+  "address": "Rua do Raio, 1692",
+  "status": ["ativo"],
+  "id": "19931440-a233-4822-a0fe-25942c736377"
+},
+{
+  "name": "ALBORS",
+  "address": "Rua Boa Esperança, 3",
+  "status": ["ativo"],
+  "id": "a322f49c-81b8-4068-924a-afadb4dccc57"
+}]
