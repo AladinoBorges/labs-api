@@ -5,35 +5,38 @@
 ## Contexto
 
 Estamos desenvolvendo uma aplicação para as seguintes situações:
-- Laboratório:
+
+**Laboratório**
   - [x]  cadastrar um novo laboratório;
   - [x]  obter uma lista de laboratórios ativos;
   - [x]  atualizar um laboratório existente;
   - [x]  remover logicamente um laboratório ativo.
-- Exames:
+
+**Exames**
   - [x]  cadastrar um novo exame;
   - [x]  obter uma lista de exames ativos;
   - [x]  atualizar um exame existente;
   - [x]  remover logicamente um exame ativo.
-- Associação:
+
+**Associação**
   - [ ]  associar um exame ativo à um laboratório ativo;
   - [ ]  desassociar um exame ativo de um laboratório ativo;
 
-  **Importante:**
-  
+**Importante:**
   - [ ]  Um exame pode estar associado a mais de um laboratório;
   - [x]  O cadastro de um laboratório/exame é considerado ativo e recebe um `id` gerado automaticamente.
 
 ### Informações
 
-- Laboratório
-  - [x]  nome
-  - [x]  endereço
-  - [x]  status [ativo, inativo]
-- Exame
-  - [x]  nome
-  - [x]  tipo [analise clinica, imagem]
-  - [x]  status [ativo, inativo]
+**Laboratório**
+  - [x]  nome;
+  - [x]  endereço;
+  - [x]  status [ativo, inativo];
+
+**Exame**
+  - [x]  nome;
+  - [x]  tipo [analise clinica, imagem];
+  - [x]  status [ativo, inativo];
 
 ## Funcionalidades extras
 
@@ -45,11 +48,10 @@ Estamos desenvolvendo uma aplicação para as seguintes situações:
 - [x]  Desenvolver usando *Javascript*
 - [x]  Serviço deve respeitar os princípios RESTFUL
 
-  ### Criar um `README.md`
-
-    - [ ]  Arquitetura
-    - [ ]  instruções de uso
-    - [ ]  entre outros
+**Criar um `README.md`**
+- [ ]  Arquitetura
+- [x]  instruções de uso
+- [ ]  entre outros
 
 ## Diferenciais
 
@@ -60,6 +62,12 @@ Estamos desenvolvendo uma aplicação para as seguintes situações:
 
 ## Ambiente de desenvolvimento
 
+#### Frameworks e dependências npm
+* [uuid](https://www.npmjs.com/package/uuid);
+* [nodemon](https://www.npmjs.com/package/nodemon);
+* [express](https://www.npmjs.com/package/express);
+* [nodejs](https://nodejs.org/en).
+
 #### Como rodar o projeto:
 * fazer um clone do repositorio para a sua máquina;
 * instalar as dependências com **`npm install`**;
@@ -68,12 +76,14 @@ Estamos desenvolvendo uma aplicação para as seguintes situações:
 * a API roda no endpoint **`localhost:5000`**
 
 ### Como usar a API
+
 **IDS** (Identificadores únicos para os laboratórios e exames)
 
 Usar um desses ids no endpoint **`/labs/id`** para que a API retorne somente o laboratório com o id correspondente.
 Também serve como identificador para atualizar ou deletar da base de dados o laboratório correspondente.
 
-- Laboratórios ativos (**`labs`**):
+**Laboratórios ativos**
+
     1. 22111fef-1574-434c-9131-16138f1bf6b8
     2. 1da4b0e9-46f5-4ed4-b45c-b52885d036ca
     3. f336dee1-693a-43e9-b7b4-4692245480c4
@@ -89,7 +99,8 @@ Também serve como identificador para atualizar ou deletar da base de dados o la
 Usar um desses ids no endpoint **`/exams/id`** para que a API retorne somente o exame com o id correspondente.
 Também serve como identificador para atualizar ou deletar da base de dados o exame correspondente.
 
-- Exames ativos (**`exams`**):
+**Exames ativos**
+
     1. 1271412c-ef86-40b4-b348-27001ecfe1e7
     2. adbe201f-681a-4567-a821-1c449b9ee625
     3. 19ed4fcb-db25-468a-b656-e8005e2d22e4
