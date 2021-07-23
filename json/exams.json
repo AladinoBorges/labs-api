@@ -1,0 +1,12 @@
+[{
+  "name": "Colesterol Total",
+  "type": ["análise clínica"],
+  "status": ["ativo"],
+  "id": "876e711a-3120-4532-81ef-98f0501f1d50"
+},
+{
+  "name": "Creatinina",
+  "type": ["análise clínica"],
+  "status": ["ativo"],
+  "id": "ff6676bd-d662-431c-88bd-5da3b8bbcdce"
+}]
